@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background: #fff8e1;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #A16B38;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    width: 100%;
+
+}
+
+#nav__s1__h3 {
+    color: #380F0B;
+}
+#sidenav {
+    background-color: #A16B38;
+}
+
+/* Newsletter Heading */
+.newsletter-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    text-shadow: 3px 3px 0 #ffcc80, 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Subtitle */
+.newsletter-subtitle {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #374151;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Box */
+.newsletter-input {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #f44336;
+    color: #fff8e1;
+    width: 80%;
+    max-width: 700px;
+    font-size: 1rem;
+    border: 2px solid #ffcc80;
+    box-shadow: inset 1px 1px 4px #b71c1c, 3px 3px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.newsletter-input::placeholder {
+    color: #ffe0b2;
+    font-style: italic;
+}
+
+.newsletter-button {
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #fff8e1;
+    /* Creamy off-white for clear text */
+    background-color: #b71c1c;
+    /* Deep spicy red */
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 8px 0 #8e0000, 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    animation: popBounce 1.2s ease infinite alternate;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px #ffecb3;
+}
+
+/* Hover  */
+.newsletter-button:hover {
+    background-color: #ffc107;
+    /* Golden yellow */
+    color: #5b0000;
+    /* Deep red text */
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 0 #c67c00, 0 12px 22px rgba(255, 200, 0, 0.45);
+}
+
+/*  bounce animation */
+@keyframes popBounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-2px);
+    }
+}
+
+.footer{
+    background-color: #381601;
+    height: 500px;
+    margin-top: 8%;
+    color: #DFAE58;
+}
+.footer h3{
+    color: #DFAE58;
+}

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaaram lo Katha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="font-family: 'Playfair Display', serif;">
+    <!--Offer section-->
+    <div class="bg-black p-3 flex items-center gap-10 align-middle justify-center" id="titlediv">
+        <h3 class="text-white font-bold text-xs md:text-2xl ">Sign up to Get 20% off for your first order</h3>
+        <i class=" sm:w-3 h-3 fa-solid fa-xmark fa-lg align-middle mt-4 cursor-pointer" id="offer"
+            style="color: #ffffff;"></i>
+    </div>
+    <!--Navbar-->
+    <nav class="container">
+        <div id="nav__s1" class="flex gap-2 p-2">
+            <img src="./images/kaaramlogo.ico" class="w-10 h-10 border rounded-xl" alt="">
+            <h3 class="text-xl font-bold items-center mt-1 " id="nav__s1__h3">KAARAM LO KATHA</h3>
+        </div>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden mt-3" class="size-6 ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <ul class=" hidden md:flex  gap-8  items-center">
+            <li>
+                <a class="hover:underline hover:text-black" href="#">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="#newarrival">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="#bestseller">Bestseller</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Our Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!--Sidenav-->
+    <section id="sidenav" class=" fixed z-50 top-0 transition-all duration-1000"
+        style="width:50%; height:100vh; right:150%">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-grey-600  ">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+    <!--frontimage-->
+    <section class="frontimage relative w-full">
+        <!-- Banner Images -->
+        <img src="./images/frontpagekaaram.png" alt="BannerPage" class="slider-img block" id="banner">
+        <img src="./images/kaaram 2.jpg" alt="SecondBanner" class="slider-img hidden" id="banner">
+
+        <!-- Left Arrow -->
+        <img src="./images/left-chevron.png" alt="leftkey" id="leftarr"
+            class="w-10 h-10 absolute top-1/2 left-4 transform -translate-y-1/2 cursor-pointer z-10">
+
+        <!-- Right Arrow -->
+        <img src="./images/right-chevron.png" alt="rightkey" id="rightarr"
+            class="w-10 h-10 absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer z-10">
+    </section>
+    <section class="text-center px-4 py-6" style="background-color: #fff8e1;">
+        <h2 class="text-2xl md:text-3xl font-bold text-amber-700 tracking-wide uppercase text-center mt-8">
+            Our Special Ingredients
+        </h2>
+
+        <div class="w-80 h-1 mx-auto bg-yellow-600 rounded my-2"></div>
+
+        <p class="text-base md:text-lg text-gray-700">In every jar, a grandmother’s touch.</p>
+        <p class="text-base md:text-lg text-gray-700">In every bite, a story from home.</p>
+        <p class="text-lg md:text-xl font-bold text-yellow-600 glow-text mt-2">
+            ✨ Handcrafted with Love, Served with Heritage.
+        </p>
+    </section>
+    <!--Responsive Assurence-->
+    <section class="grid grid-cols-5 gap-6 justify-evenly my-15 md:pl-20 px-4 py-5 ">
+        <img src="./images/des1.avif" alt="assure1">
+        <img src="./images/des2.avif" alt="assure2">
+        <img src="./images/des3.avif" alt="assure3">
+        <img src="./images/des4.avif" alt="assure4">
+        <img src="./images/des5.avif" alt="assure5">
+    </section>
+
+    <!--Bestseller List-->
+    <section id="bestseller" class="py-10 px-4">
+        <!--heading section ------>
+        <h2 class="text-center text-3xl text-red-800 font-bold uppercase mb-6 glowing-text">
+            Kaaram lo Katha HITLIST
+        </h2>
+        <p class="text-center text-xl md:text-2xl text-grey-700 mb-8 ">These jars fly off our shelves – and straight
+            into
+            your hearts. 💛</p>
+
+        <!--division for the outer of the mobile responsive site -->
+        <div class="grid grid-cols-2 gap-4 md:hidden">
+            <div class="bg-white p-4 rounded-xl shadow-lg relative transition-all ">
+                <img src="./images/ch1.webp" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center  mt-2">Spicy Chicken Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-lg relative">
+                <img src="./images/ch2.webp" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Spicy Prawn Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.299 <del>(399)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-lg relative">
+                <img src="./images/ch3.webp" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Shrimpyoon Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.99 <del>(199)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-lg relative">
+                <img src="./images/ch4.webp" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Chicken Chilli Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-lg relative">
+                <img src="./images/ch5.webp" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Chicken Boneless Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-lg relative">
+                <img src="./images/ch6.webp" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">6 in 1 Combo</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.899 <del>(1299)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-lg relative">
+                <img src="./images/ch7.webp" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Spicy lamp Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.599 <del>(899)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-lg relative">
+                <img src="./images/ch8.webp" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Lamp Crispy Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.599 <del>(899)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+        </div>
+
+
+        <!--Responsive for laptop view to align to scroll-->
+        <div class="overflow-x-auto overflow-y-hidden  hidden md:block  p-6 border-none outline-none scrollbar-hide">
+            <div class="flex gap-10 w-max scroll-smooth snap-x snap-mandatory">
+                <div
+                    class="min-w-[250px] bg-white p-4 rounded-xl shadow-lg relative transform transition-transform duration-300 hover:scale-105 snap-start">
+                    <img src="./images/ch1.webp" class="w-full h-44 object-cover rounded-md"
+                        alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center  mt-2">Spicy Chicken Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart</button>
+                </div>
+                <div
+                    class="min-w-[250px] bg-white p-4 rounded-xl shadow-lg relative transform transition-transform duration-300 hover:scale-105 snap-start">
+                    <img src="./images/ch2.webp" class="w-full h-44 object-cover rounded-md"
+                        alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Spicy Prawn Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.299 <del>(399)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart</button>
+                </div>
+                <div
+                    class="min-w-[250px] bg-white p-4 rounded-xl shadow-lg relative transform transition-transform duration-300 hover:scale-105 snap-start">
+                    <img src="./images/ch3.webp" class="w-full h-44 object-cover rounded-md"
+                        alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Shrimpyoon Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.99 <del>(199)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart</button>
+                </div>
+                <div
+                    class="min-w-[250px] bg-white p-4 rounded-xl shadow-lg relative transform transition-transform duration-300 hover:scale-105 snap-start">
+                    <img src="./images/ch4.webp" class="w-full h-44 object-cover rounded-md"
+                        alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Chicken Chilli Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart</button>
+                </div>
+                <div
+                    class="min-w-[250px] bg-white p-4 rounded-xl shadow-lg relative transform transition-transform duration-300 hover:scale-105 snap-start">
+                    <img src="./images/ch5.webp" class="w-full h-44 object-cover rounded-md"
+                        alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Chicken Boneless Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart</button>
+                </div>
+                <div
+                    class="min-w-[250px] bg-white p-4 rounded-xl shadow-lg relative transform transition-transform duration-300 hover:scale-105 snap-start">
+                    <img src="./images/ch6.webp" class="w-full h-44 object-cover rounded-md"
+                        alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">6 in 1 Combo</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.899 <del>(1299)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart</button>
+                </div>
+                <div
+                    class="min-w-[250px] bg-white p-4 rounded-xl shadow-lg relative transform transition-transform duration-300 hover:scale-105 snap-start">
+                    <img src="./images/ch7.webp" class="w-full h-44 object-cover rounded-md"
+                        alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Spicy lamp Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.599 <del>(899)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart</button>
+                </div>
+                <div
+                    class="min-w-[250px] bg-white p-4 rounded-xl shadow-lg relative transform transition-transform duration-300 hover:scale-105 snap-start">
+                    <img src="./images/ch8.webp" class="w-full h-44 object-cover rounded-md"
+                        alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Lamp Crispy Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.599 <del>(899)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------NEW ARRIVAl Section -------->
+    <section class="py-10 px-4" id="newarrival">
+        <h2 class="text-center text-2xl md:text-3xl  mb-20 font-extrabold effect__text">
+            From Our Anjarai Petti to Your Plate – First Time Ever!
+        </h2>
+
+        <!--Responsive mobile view for new arrival-->
+        <div class="grid grid-cols-2 gap-4 mt-14 md:hidden">
+            <div class="bg-white p-4 rounded-xl shadow-lg relative transition-all ">
+                <img src="./images/na1.webp" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center  mt-2">Crispy Crab Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.399 <del>(599)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-lg relative">
+                <img src="./images/na2.webp" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Shrimp Gun Powder</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.299 <del>(399)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-lg relative">
+                <img src="./images/na3.webp" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Lamp Crispy Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.99 <del>(199)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-lg relative">
+                <img src="./images/ch4.webp" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Chicken Chilli Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-lg relative">
+                <img src="./images/na5.jpg" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Mango Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.99 <del>(199)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-lg relative">
+                <img src="./images/na6.jpeg" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Avakaya Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.69 <del>(129)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-lg relative">
+                <img src="./images/na7.crdownload" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Garlic Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.99 <del>(299)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-lg relative">
+                <img src="./images/na8.jpg" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">15 in One Meal Combo</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.999 <del>(1299)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+        </div>
+
+        <!-------Responsive site for laptop view for Newarrival section--------->
+        <div class=" hidden md:grid grid-cols-4 gap-10 mt-4">
+            <div
+                class="bg-white p-4 rounded-xl shadow-lg relative h-100 transform transition-transform duration-300 hover:scale-105 ">
+                <img src="./images/na13.jpeg" class="h-60 " alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center  mt-2">Crispy Crab Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.399 <del>(599)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div
+                class="bg-white p-4 rounded-xl shadow-lg w-150 relative transform transition-transform duration-300 hover:scale-105">
+                <img src="./images/na14.jpg" class="h-60" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Fruit Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.699 <del>(999)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div
+                class="bg-white p-4 rounded-xl shadow-lg w-150 relative transform transition-transform duration-300 hover:scale-105">
+                <img src="./images/na15.jpg" class="h-60" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Mixed Veg Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(399)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div
+                class="bg-white p-4 rounded-xl shadow-lg w-150 relative transform transition-transform duration-300 hover:scale-105">
+                <img src="./images/n16.webp" class="h-60 " alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Raw Mango Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.149 <del>(299)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div
+                class="bg-white p-4 rounded-xl shadow-lg relative transform transition-transform duration-300 hover:scale-105">
+                <img src="./images/na5.jpg" class="h-60" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Mango Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.99 <del>(199)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div
+                class="bg-white p-4 rounded-xl shadow-lg relative transform transition-transform duration-300 hover:scale-105">
+                <img src="./images/na6.jpeg" class="h-60" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Avakaya Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.69 <del>(129)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div
+                class="bg-white p-4 rounded-xl shadow-lg relative transform transition-transform duration-300 hover:scale-105">
+                <img src="./images/na7.crdownload" class="h-60" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">Garlic Pickle</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.99 <del>(299)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+            <div
+                class="bg-white p-4 rounded-xl shadow-lg relative transform transition-transform duration-300 hover:scale-105">
+                <img src="./images/na8.jpg" class="h-60" alt="Spicy Chicken Pickle ">
+                <h2 class="text-red-700 font-semibold text-center mt-2">15 in One Meal Combo</h2>
+                <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                <p class="text-red-700 font-semibold text-center mt-2">RS.999 <del>(1299)</del></p>
+                <button
+                    class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                <button
+                    class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                    to Cart</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!----Announcement----->
+    <section
+        class="px-3 m-10 flex flex-col justify-center align-middle md:flex-row  items-center text-white rounded-xl  shadow-xl announcement">
+
+        <!-- Left Image -->
+        <div class="w-full m-10 p-4">
+            <img src="./images/na8.jpg" alt="Limited Offer">
+        </div>
+
+        <!-- Right Offer Content -->
+
+        <div class="w-full md:w-1/2 pb-10 text-center md:text-left" id="offertag">
+            <h1
+                class="text-3xl md:text-4xl font-bold mb-2 text-[#ffca28] drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] animate-bounce">
+                🎉 Limited Offer 🎉
+            </h1>
+            <h4 class="text-xl md:text-2xl font-semibold text-white drop-shadow-[1px_1px_1px_rgba(0,0,0,0.4)] mb-4">
+                🔥 35% OFF for the First 30 Customers!
+            </h4>
+            <button
+                class="px-6 py-2 bg-white text-red-800 font-bold rounded-xl hover:bg-yellow-400 hover:text-black shadow-xl hover:scale-105 transition-all duration-300">
+                Add to Cart
+            </button>
+        </div>
+
+    </section>
+
+    <!---NEWSLETTER--->
+    <section class="text-center my-16" id="newsletter">
+        <h1 class="newsletter-title">Join our News Letter</h1>
+
+        <h3 class="newsletter-subtitle">
+            Signup for our email newspaper to get exclusive discounts, updates, and more
+        </h3>
+
+        <input type="email" class="newsletter-input" placeholder="Enter the Email ID" />
+
+        <br>
+
+        <button id="newsbtn" class="font-extrabold newsletter-button">
+            Subscribe
+        </button>
+    </section>
+
+
+    <!--FOOTER SECTIOn-->
+
+    <section class="flex flex-col md:flex-row justify-around items-start gap-8 px-6 py-10   footer">
+
+        <!--Logo & Contact -->
+        <div class="flex gap-4 items-start md:relative md:top-10">
+            <div class="relative top-11">
+                <img src="./images/kaaramlogo.ico" class="w-16 h-16 border rounded-xl" alt="logo">
+            </div>
+            <div class="mt-1">
+                <h3 class="text-2xl font-bold">KAARAM LO KATHA</h3>
+                <p class="mt-2">Address: Kaaram Lo Katha, Sivakasi.</p>
+                <p class="mt-2">Contact No: 9487564236</p>
+                <p class="mt-4 text-sm ">
+                    &copy; 2025 <span class="font-semibold ">Kaaram Lo Katha</span>. All rights reserved.
+                </p>
+            </div>
+        </div>
+
+        <!--Useful Links -->
+        <div class="cursor-pointer mt-6 md:mt-10 ">
+            <h2 class="text-2xl mb-4 hover:text-red-400">Help & Useful Links</h2>
+            <ul class="space-y-3">
+                <li class="hover:text-red-400">Track your order</li>
+                <li class="hover:text-red-400">Featured on Torg</li>
+                <li class="hover:text-red-400">Privacy Policy</li>
+                <li class="hover:text-red-400">Refund Policy</li>
+                <li class="hover:text-red-400">Shipping Policy</li>
+                <li class="hover:text-red-400">Terms of Service</li>
+                <li><a href="contact.html" class="hover:text-red-400 hidden md:block">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!--  Social Links -->
+        <div class="hidden md:block mt-10">
+            <h2 class="text-2xl mb-4">Follow Us On</h2>
+            <div class="flex gap-5 text-2xl ">
+                <a href="#" class="hover:text-red-500"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-gray-300"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" class="hover:text-red-600"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <script src="index.js">
+
+    </script>
+</body>
+
+</html>

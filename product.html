@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="container">
+        <div id="nav__s1" class="flex gap-2 p-2">
+            <img src="./images/kaaramlogo.ico" class="w-10 h-10 border rounded-xl" alt="">
+            <h3 class="text-xl font-bold items-center mt-1 " id="nav__s1__h3">KAARAM LO KATHA</h3>
+        </div>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden mt-3" class="size-6 ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <ul class=" hidden md:flex  gap-8  items-center">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Bestseller</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Our Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+
+    </nav>
+    <!--Sidenav-->
+    <section id="sidenav" class=" fixed z-50 top-0 transition-all duration-1000"
+        style="width:50%; height:100vh; right:150%">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-grey-600  ">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+
+    <!--Checkbox section-->
+    <section class="flex px-6 py-10 gap-10">
+        <!--sidebar checkbox-->
+        <aside class="w-1/5 border-r-2 border-black pr-4">
+            <h2 class="font-bold md:text-2xl mb-4">Taste type</h2>
+            <ul class="space-y-2 font-semibold">
+                <li><input type="checkbox" class="filter-checkbox" value="spicy"> Spicy</li>
+                <li><input type="checkbox" class="filter-checkbox" value="tangy"> Tangy</li>
+                <li><input type="checkbox" class="filter-checkbox" value="mild"> Mild</li>
+            </ul>
+
+            <h2 class="font-bold md:text-2xl mt-10 mb-4">Categories</h2>
+            <ul class="space-y-2 font-semibold">
+                <li><input type="checkbox" class="filter-checkbox" value="veg"> VEG</li>
+                <li><input type="checkbox" class="filter-checkbox" value="non-veg"> NON-VEG</li>
+            </ul>
+
+            <h2 class="font-bold md:text-2xl mt-10 mb-4">ARRIVAL</h2>
+            <ul class="space-y-2 font-semibold">
+                <li><input type="checkbox" class="filter-checkbox" value="new"> New Arrival</li>
+                <li><input type="checkbox" class="filter-checkbox" value="bestseller"> Bestseller</li>
+            </ul>
+        </aside>
+
+
+        <!--collections-->
+        <div class="w-4/5">
+            <div class="mb-6">
+                <input type="text" id="itemsearch" placeholder="Search your pickle..."
+                    class="w-full px-4 py-2 border border-[#d4a373] rounded-full focus:outline-none focus:ring-2 focus:ring-[#bc3908]">
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-4 rounded-xl shadow-lg relative  spicy non-veg bestseller search-tag">
+                    <img src="./images/ch1.webp" alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center  mt-2">Spicy Chicken Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart
+                    </button>
+                    <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
+                        id="heartbtn" style="color: #000205;">
+                    </i>
+
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-lg relative spicy non-veg bestseller search-tag">
+                    <img src="./images/ch2.webp" alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Spicy Prawn Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.299 <del>(399)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart</button>
+                    <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
+                        id="heartbtn" style="color: #000205;">
+                    </i>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-lg relative tangy non-veg bestseller search-tag">
+                    <img src="./images/ch3.webp" alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Shrimpyoon Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.99 <del>(199)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart
+                    </button>
+                    <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
+                        id="heartbtn" style="color: #000205;">
+                    </i>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-lg relative tangy non-veg bestseller search-tag">
+                    <img src="./images/ch4.webp" alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Chicken Chilli Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart
+                    </button>
+                    <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
+                        id="heartbtn" style="color: #000205;">
+                    </i>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-lg relative non-veg bestseller mild search-tag">
+                    <img src="./images/ch5.webp" alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Chicken Boneless Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart
+                    </button>
+                    <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
+                        id="heartbtn" style="color: #000205;">
+                    </i>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-lg relative non-veg bestseller mild search-tag">
+                    <img src="./images/ch6.webp" alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">6 in 1 Combo</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.899 <del>(1299)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart
+                    </button>
+                    <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
+                        id="heartbtn" style="color: #000205;">
+                    </i>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-lg tangy non-veg bestseller mild spicy relative search-tag">
+                    <img src="./images/ch7.webp" alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Spicy lamb Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.599 <del>(899)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart
+                    </button>
+                    <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
+                        id="heartbtn" style="color: #000205;">
+                    </i>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-lg relative tangy non-veg bestseller mild spicy search-tag">
+                    <img src="./images/ch8.webp" alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Lamb Crispy Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.599 <del>(899)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart
+                    </button>
+                    <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
+                        id="heartbtn" style="color: #000205;">
+                    </i>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-lg relative search-tag tangy new spicy non-veg ">
+                    <img src="./images/na1.webp" alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center  mt-2">Crispy Crab Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.399 <del>(599)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart
+                    </button>
+                    <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
+                        id="heartbtn" style="color: #000205;">
+                    </i>
+
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-lg relative mild non-veg new search-tag">
+                    <img src="./images/na2.webp" alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Shrimp Gun Powder</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.299 <del>(399)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart
+                    </button>
+                    <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
+                        id="heartbtn" style="color: #000205;">
+                    </i>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-lg relative new non-veg tangy search-tag">
+                    <img src="./images/na3.webp" alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Lamp Crispy Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.99 <del>(199)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart
+                    </button>
+                    <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
+                        id="heartbtn" style="color: #000205;">
+                    </i>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-lg relative new spicy non-veg search-tag">
+                    <img src="./images/ch4.webp" alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Chicken Chilli Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart
+                    </button>
+                    <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
+                        id="heartbtn" style="color: #000205;">
+                    </i>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-lg relative veg  new search-tag">
+                    <img src="./images/na5.jpg" alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Mango Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.99 <del>(199)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart
+                    </button>
+                    <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
+                        id="heartbtn" style="color: #000205;">
+                    </i>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-lg relative new veg search-tag">
+                    <img src="./images/na6.jpeg" alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Avakaya Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.69 <del>(129)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart
+                    </button>
+                    <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
+                        id="heartbtn" style="color: #000205;">
+                    </i>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-lg relative new veg  search-tag">
+                    <img src="./images/na7.crdownload" alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Garlic Pickle</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.99 <del>(299)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart
+                    </button>
+                    <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
+                        id="heartbtn" style="color: #000205;">
+                    </i>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-lg relative new  veg  search-tag">
+                    <img src="./images/na8.jpg" alt="Spicy Chicken Pickle ">
+                    <h2 class="text-red-700 font-semibold text-center mt-2">15 in One Meal Combo</h2>
+                    <p class="text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold text-center mt-2">RS.999 <del>(1299)</del></p>
+                    <button
+                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                    <button
+                        class=" flex justify-center p-2 rounded-xl text-white bg-red-800  mt-2 cursor-pointer px-3 mx-auto">Add
+                        to Cart
+                    </button>
+                    <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
+                        id="heartbtn" style="color: #000205;">
+                    </i>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!---NEWSLETTER--->
+    <section class="text-center my-16" id="newsletter">
+        <h1 class="newsletter-title">Join our News Letter</h1>
+
+        <h3 class="newsletter-subtitle">
+            Signup for our email newspaper to get exclusive discounts, updates, and more
+        </h3>
+
+        <input type="email" class="newsletter-input" placeholder="Enter the Email ID" />
+
+        <br>
+
+        <button id="newsbtn" class="font-extrabold newsletter-button">
+            Subscribe
+        </button>
+    </section>
+
+    <!--FOOTER SECTIOn-->
+
+    <section class="flex flex-col md:flex-row justify-around items-start gap-8 px-6 py-10   footer">
+
+        <!--Logo & Contact -->
+        <div class="flex gap-4 items-start md:relative md:top-10">
+            <div class="relative top-11">
+                <img src="./images/kaaramlogo.ico" class="w-16 h-16 border rounded-xl" alt="logo">
+            </div>
+            <div class="mt-1">
+                <h3 class="text-2xl font-bold">KAARAM LO KATHA</h3>
+                <p class="mt-2">Address: Kaaram Lo Katha, Sivakasi.</p>
+                <p class="mt-2">Contact No: 9487564236</p>
+                <p class="mt-4 text-sm ">
+                    &copy; 2025 <span class="font-semibold ">Kaaram Lo Katha</span>. All rights reserved.
+                </p>
+            </div>
+        </div>
+
+        <!--Useful Links -->
+        <div class="cursor-pointer mt-6 md:mt-10 ">
+            <h2 class="text-2xl mb-4 hover:text-red-400">Help & Useful Links</h2>
+            <ul class="space-y-3">
+                <li class="hover:text-red-400">Track your order</li>
+                <li class="hover:text-red-400">Featured on Torg</li>
+                <li class="hover:text-red-400">Privacy Policy</li>
+                <li class="hover:text-red-400">Refund Policy</li>
+                <li class="hover:text-red-400">Shipping Policy</li>
+                <li class="hover:text-red-400">Terms of Service</li>
+                <li><a  href="contact.html" class="hover:text-red-400 hidden md:block">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!--  Social Links -->
+        <div class="hidden md:block mt-10">
+            <h2 class="text-2xl mb-4">Follow Us On</h2>
+            <div class="flex gap-5 text-2xl ">
+                <a href="#" class="hover:text-red-500"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-gray-300"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" class="hover:text-red-600"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+    </section>
+    <script src="product.js"></script>
+</body>
