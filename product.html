@@ -63,31 +63,42 @@
     </section>
 
     <!--Checkbox section-->
-    <section class="flex flex-col md:flex-row px-4 md:px-6 py-10 gap-6 md:gap-10">
-        <!--sidebar checkbox-->
-        <aside class="w-full md:w-1/5 border-b-2 md:border-b-0 md:border-r-2 border-black pb-6 md:pb-0 md:pr-4">
-            <h2 class="font-bold text-lg md:text-2xl mb-4">Taste type</h2>
-            <ul class="space-y-2 font-semibold">
-                <li><input type="checkbox" class="filter-checkbox" value="spicy"> Spicy</li>
-                <li><input type="checkbox" class="filter-checkbox" value="tangy"> Tangy</li>
-                <li><input type="checkbox" class="filter-checkbox" value="mild"> Mild</li>
-            </ul>
+    <section class="flex flex-row px-2 md:px-6 py-10 gap-4 md:gap-10">
+        <!-- Sidebar -->
+        <aside class="w-1/5 border-r-2 border-black ">
+            <div class="pr-4">
+                <h2 class="font-bold text-xs md:text-2xl mb-4">Taste type</h2>
+                <ul class="text-xs md:text-lg space-y-2 mr-2 font-semibold">
+                    <li><input type="checkbox" class="text-xs filter-checkbox" value="spicy"> Spicy</li>
+                    <li><input type="checkbox" class="text-xs filter-checkbox" value="tangy"> Tangy</li>
+                    <li><input type="checkbox" class="text-xs filter-checkbox" value="mild"> Mild</li>
+                </ul>
 
-            <h2 class="font-bold text-lg md:text-2xl mt-10 mb-4">Categories</h2>
-            <ul class="space-y-2 font-semibold">
-                <li><input type="checkbox" class="filter-checkbox" value="veg"> VEG</li>
-                <li><input type="checkbox" class="filter-checkbox" value="non-veg"> NON-VEG</li>
-            </ul>
+                <h2 class="font-bold text-xs  md:text-2xl mt-10 mb-4">Categories</h2>
+                <ul class="text-xs md:text-lg space-y-2  font-semibold">
+                    <li><input type="checkbox" class="text-sm filter-checkbox" value="veg"> VEG</li>
+                    <li><input type="checkbox" class="text-sm filter-checkbox" value="non-veg"> NON-VEG</li>
+                </ul>
 
-            <h2 class="font-bold text-lg md:text-2xl mt-10 mb-4">ARRIVAL</h2>
-            <ul class="space-y-2 font-semibold">
-                <li><input type="checkbox" class="filter-checkbox" value="new"> New Arrival</li>
-                <li><input type="checkbox" class="filter-checkbox" value="bestseller"> Bestseller</li>
-            </ul>
+                <h2 class="font-bold text-xs md:text-2xl mt-10 mb-4">Arrival</h2>
+                <ul class="text-xs md:text-lg space-y-2 font-semibold">
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" class="text-sm filter-checkbox" value="new">
+                        <span class="md:inline hidden">New Arrival</span>
+                        <span class="inline md:hidden">New</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" class="text-sm filter-checkbox" value="bestseller">
+                        <span class="md:inline hidden">Bestseller</span>
+                        <span class="inline md:hidden">Best</span>
+                    </li>
+                </ul>
+
+            </div>
         </aside>
 
         <!--collections-->
-        <div class="w-full md:w-4/5">
+        <div class="w-full md:w-5/6">
             <div class="mb-6">
                 <input type="text" id="itemsearch" placeholder="Search your pickle..."
                     class="w-full px-4 py-2 border border-[#d4a373] rounded-full focus:outline-none focus:ring-2 focus:ring-[#bc3908]">
@@ -101,7 +112,7 @@
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
-                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                        class="hidden md:block px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
                     <button
                         class="flex justify-center p-2 rounded-xl text-white bg-red-800 mt-2 cursor-pointer px-3 mx-auto">Add
                         to Cart</button>
@@ -110,11 +121,11 @@
                 </div>
                 <div class="bg-white p-4 rounded-xl shadow-lg relative spicy non-veg bestseller search-tag">
                     <img src="./images/ch2.webp" alt="Spicy Chicken Pickle ">
-                    <h2 class="text-red-700 font-semibold text-center mt-2">Spicy Prawns  Pickle</h2>
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Spicy Prawns Pickle</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
-                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                        class="hidden md:block px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
                     <button
                         class="flex justify-center p-2 rounded-xl text-white bg-red-800 mt-2 cursor-pointer px-3 mx-auto">Add
                         to Cart</button>
@@ -127,7 +138,7 @@
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
-                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                        class="hidden md:block px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
                     <button
                         class="flex justify-center p-2 rounded-xl text-white bg-red-800 mt-2 cursor-pointer px-3 mx-auto">Add
                         to Cart</button>
@@ -140,7 +151,7 @@
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
-                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                        class="hidden md:block px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
                     <button
                         class="flex justify-center p-2 rounded-xl text-white bg-red-800 mt-2 cursor-pointer px-3 mx-auto">Add
                         to Cart</button>
@@ -153,20 +164,21 @@
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
-                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                        class="hidden md:block px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
                     <button
                         class="flex justify-center p-2 rounded-xl text-white bg-red-800 mt-2 cursor-pointer px-3 mx-auto">Add
                         to Cart</button>
                     <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
                         id="heartbtn" style="color: #000205;"></i>
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg relative tangy non-veg bestseller mild spicy   search-tag">
+                <div
+                    class="bg-white p-4 rounded-xl shadow-lg relative tangy non-veg bestseller mild spicy   search-tag">
                     <img src="./images/ch6.webp" alt="Spicy Chicken Pickle ">
-                    <h2 class="text-red-700 font-semibold text-center mt-2">6 in 1 Ultimate Combo</h2>
+                    <h2 class="text-red-700 font-semibold text-center mt-2">6 in One Ultimate Combo</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
-                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                        class="hidden md:block px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
                     <button
                         class="flex justify-center p-2 rounded-xl text-white bg-red-800 mt-2 cursor-pointer px-3 mx-auto">Add
                         to Cart</button>
@@ -179,7 +191,7 @@
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
-                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                        class="hidden md:block px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
                     <button
                         class="flex justify-center p-2 rounded-xl text-white bg-red-800 mt-2 cursor-pointer px-3 mx-auto">Add
                         to Cart</button>
@@ -192,7 +204,7 @@
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
-                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
+                        class="hidden md:block px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
                     <button
                         class="flex justify-center p-2 rounded-xl text-white bg-red-800 mt-2 cursor-pointer px-3 mx-auto">Add
                         to Cart</button>
@@ -205,7 +217,7 @@
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
-                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                        class="hidden md:block px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
                     <button
                         class="flex justify-center p-2 rounded-xl text-white bg-red-800 mt-2 cursor-pointer px-3 mx-auto">Add
                         to Cart</button>
@@ -218,7 +230,7 @@
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
-                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                        class="hidden md:block px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
                     <button
                         class="flex justify-center p-2 rounded-xl text-white bg-red-800 mt-2 cursor-pointer px-3 mx-auto">Add
                         to Cart</button>
@@ -231,7 +243,7 @@
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
-                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                        class="hidden md:block px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
                     <button
                         class="flex justify-center p-2 rounded-xl text-white bg-red-800 mt-2 cursor-pointer px-3 mx-auto">Add
                         to Cart</button>
@@ -244,7 +256,7 @@
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
-                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                        class="hidden md:block px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
                     <button
                         class="flex justify-center p-2 rounded-xl text-white bg-red-800 mt-2 cursor-pointer px-3 mx-auto">Add
                         to Cart</button>
@@ -257,7 +269,7 @@
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
-                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                        class="hidden md:block px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
                     <button
                         class="flex justify-center p-2 rounded-xl text-white bg-red-800 mt-2 cursor-pointer px-3 mx-auto">Add
                         to Cart</button>
@@ -270,7 +282,7 @@
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
-                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                        class="hidden md:block px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
                     <button
                         class="flex justify-center p-2 rounded-xl text-white bg-red-800 mt-2 cursor-pointer px-3 mx-auto">Add
                         to Cart</button>
@@ -279,11 +291,11 @@
                 </div>
                 <div class="bg-white p-4 rounded-xl shadow-lg relative new veg   search-tag">
                     <img src="./images/na6.jpeg" alt="Spicy Chicken Pickle ">
-                    <h2 class="text-red-700 font-semibold text-center mt-2">Crispy  Garlics Pickle</h2>
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Crispy Garlics Pickle</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
-                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                        class="hidden md:block px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
                     <button
                         class="flex justify-center p-2 rounded-xl text-white bg-red-800 mt-2 cursor-pointer px-3 mx-auto">Add
                         to Cart</button>
@@ -296,16 +308,16 @@
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
-                        class="px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
+                        class="hidden md:block px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">NewArrival💥</button>
                     <button
                         class="flex justify-center p-2 rounded-xl text-white bg-red-800 mt-2 cursor-pointer px-3 mx-auto">Add
                         to Cart</button>
                     <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
                         id="heartbtn" style="color: #000205;"></i>
                 </div>
-                
 
-                
+
+
 
             </div>
         </div>
@@ -313,7 +325,7 @@
 
 
     <!---NEWSLETTER--->
-    <section class="text-center my-16" id="newsletter">
+    <section class="text-center my-14 " id="newsletter">
         <h1 class="newsletter-title">Join our News Letter</h1>
 
         <h3 class="newsletter-subtitle">
@@ -331,7 +343,7 @@
 
     <!--FOOTER SECTIOn-->
 
-    <section class="flex flex-col md:flex-row justify-around items-start gap-8 px-6 py-10   footer">
+    <section class="flex flex-col md:flex-row justify-around items-start gap-8 px-6 py-6   footer">
 
         <!--Logo & Contact -->
         <div class="flex gap-4 items-start md:relative md:top-10">
