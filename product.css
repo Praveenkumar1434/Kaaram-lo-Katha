@@ -116,3 +116,10 @@ html {
 .footer h3 {
     color: #DFAE58;
 }
+
+@media screen and (max-width:768px){
+    #card__text{
+        font-size: 12px;
+    }
+    
+}

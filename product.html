@@ -68,11 +68,21 @@
         <aside class="w-1/5 border-r-2 border-black ">
             <div class="pr-4">
                 <h2 class="font-bold text-xs md:text-2xl mb-4">Taste type</h2>
-                <ul class="text-xs md:text-lg space-y-2 mr-2 font-semibold">
-                    <li><input type="checkbox" class="text-xs filter-checkbox" value="spicy"> Spicy</li>
-                    <li><input type="checkbox" class="text-xs filter-checkbox" value="tangy"> Tangy</li>
-                    <li><input type="checkbox" class="text-xs filter-checkbox" value="mild"> Mild</li>
+                <ul class="text-xs md:text-lg space-y-2 font-semibold">
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" class="text-xs filter-checkbox" value="spicy">
+                        <span>Spicy</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" class="text-xs filter-checkbox" value="tangy">
+                        <span>Tangy</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" class="text-xs filter-checkbox" value="mild">
+                        <span>Mild</span>
+                    </li>
                 </ul>
+
 
                 <h2 class="font-bold text-xs md:text-2xl mt-10 mb-4">Categories</h2>
                 <ul class="text-xs md:text-lg space-y-2 font-semibold">
@@ -113,11 +123,11 @@
 
             <!-- Grid layout that adapts on all screens -->
             <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-                <div class="bg-white p-4 rounded-xl shadow-lg relative spicy non-veg bestseller search-tag">
+                <div id="card__text" class="bg-white p-2  rounded-xl shadow-lg relative spicy non-veg bestseller search-tag">
                     <img src="./images/ch1.webp" alt="Spicy Chicken Pickle ">
-                    <h2 class="text-red-700 font-semibold text-center mt-2">Spicy Chicken Pickle</h2>
-                    <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
-                    <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
+                    <h2 class="text-red-700 font-semibold  text-center mt-2">Spicy Chicken Pickle</h2>
+                    <p class="hidden md:block text-red-700  font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
+                    <p class="text-red-700 font-semibold  text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
                         class="hidden md:block px-2 bg-white text-red-800 font-semibold absolute top-5 left-5 rounded-xl">Bestseller🥇</button>
                     <button
@@ -126,9 +136,9 @@
                     <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
                         id="heartbtn" style="color: #000205;"></i>
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg relative spicy non-veg bestseller search-tag">
+                <div id="card__text" class="bg-white p-2 rounded-xl shadow-lg relative spicy non-veg bestseller search-tag">
                     <img src="./images/ch2.webp" alt="Spicy Chicken Pickle ">
-                    <h2 class="text-red-700 font-semibold text-center mt-2">Spicy Prawns Pickle</h2>
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Spicy Prawn Pickle</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
@@ -139,9 +149,9 @@
                     <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
                         id="heartbtn" style="color: #000205;"></i>
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg relative tangy non-veg bestseller search-tag">
+                <div id="card__text" class="bg-white p-2 rounded-xl shadow-lg relative tangy non-veg bestseller search-tag">
                     <img src="./images/ch3.webp" alt="Spicy Chicken Pickle ">
-                    <h2 class="text-red-700 font-semibold text-center mt-2">Shrimpyoon gun Pickle</h2>
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Shrimpyoon Pickle</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
@@ -152,7 +162,7 @@
                     <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
                         id="heartbtn" style="color: #000205;"></i>
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg relative tangy non-veg bestseller search-tag">
+                <div id="card__text" class="bg-white p-2 rounded-xl shadow-lg relative tangy non-veg bestseller search-tag">
                     <img src="./images/ch4.webp" alt="Spicy Chicken Pickle ">
                     <h2 class="text-red-700 font-semibold text-center mt-2">Chicken Chilli Pickle</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
@@ -165,7 +175,7 @@
                     <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
                         id="heartbtn" style="color: #000205;"></i>
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg relative bestseller mild non-veg  search-tag">
+                <div id="card__text" class="bg-white p-2 rounded-xl shadow-lg relative bestseller mild non-veg  search-tag">
                     <img src="./images/ch5.webp" alt="Spicy Chicken Pickle ">
                     <h2 class="text-red-700 font-semibold text-center mt-2">Chicken Boneless Pickle</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
@@ -178,8 +188,8 @@
                     <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
                         id="heartbtn" style="color: #000205;"></i>
                 </div>
-                <div
-                    class="bg-white p-4 rounded-xl shadow-lg relative tangy non-veg bestseller mild spicy   search-tag">
+                <div id="card__text"
+                    class="bg-white p-2 rounded-xl shadow-lg relative tangy non-veg bestseller mild spicy   search-tag">
                     <img src="./images/ch6.webp" alt="Spicy Chicken Pickle ">
                     <h2 class="text-red-700 font-semibold text-center mt-2">6 in One Ultimate Combo</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
@@ -192,7 +202,7 @@
                     <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
                         id="heartbtn" style="color: #000205;"></i>
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg relative tangy non-veg bestseller mild spicy  search-tag">
+                <div id="card__text" class="bg-white p-2 rounded-xl shadow-lg relative tangy non-veg bestseller mild spicy  search-tag">
                     <img src="./images/ch7.webp" alt="Spicy Chicken Pickle ">
                     <h2 class="text-red-700 font-semibold text-center mt-2">Spicy lamb Pickle</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
@@ -205,7 +215,7 @@
                     <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
                         id="heartbtn" style="color: #000205;"></i>
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg relative tangy non-veg bestseller mild spicy  search-tag">
+                <div id="card__text" class="bg-white p-2 rounded-xl shadow-lg relative tangy non-veg bestseller mild spicy  search-tag">
                     <img src="./images/ch8.webp" alt="Spicy Chicken Pickle ">
                     <h2 class="text-red-700 font-semibold text-center mt-2">Lamb Crispy Pickle</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
@@ -218,9 +228,9 @@
                     <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
                         id="heartbtn" style="color: #000205;"></i>
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg relative bestseller tangey non-veg  search-tag">
+                <div id="card__text" class="bg-white p-2 rounded-xl shadow-lg relative bestseller tangey non-veg  search-tag">
                     <img src="./images/na1.webp" alt="Spicy Chicken Pickle ">
-                    <h2 class="text-red-700 font-semibold text-center mt-2">Crispy Chilli Crab Pickle</h2>
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Crispy Crab Pickle</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
@@ -231,7 +241,7 @@
                     <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
                         id="heartbtn" style="color: #000205;"></i>
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg relative new mild non-veg  search-tag">
+                <div id="card__text" class="bg-white p-2 rounded-xl shadow-lg relative new mild non-veg  search-tag">
                     <img src="./images/na2.webp" alt="Spicy Chicken Pickle ">
                     <h2 class="text-red-700 font-semibold text-center mt-2">Shrimp Gun Powder</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
@@ -244,9 +254,9 @@
                     <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
                         id="heartbtn" style="color: #000205;"></i>
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg relative new non-veg tangy  search-tag">
+                <div id="card__text" class="bg-white p-2 rounded-xl shadow-lg relative new non-veg tangy  search-tag">
                     <img src="./images/na3.webp" alt="Spicy Chicken Pickle ">
-                    <h2 class="text-red-700 font-semibold text-center mt-2">Lamp chilli Crispy Pickle</h2>
+                    <h2 class="text-red-700 font-semibold text-center mt-2">Lamp Crispy Pickle</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
                     <p class="text-red-700 font-semibold text-center mt-2">RS.199 <del>(299)</del></p>
                     <button
@@ -257,7 +267,7 @@
                     <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
                         id="heartbtn" style="color: #000205;"></i>
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg relative new spicy non-veg  search-tag">
+                <div id="card__text" class="bg-white p-2 rounded-xl shadow-lg relative new spicy non-veg  search-tag">
                     <img src="./images/ch5.webp" alt="Spicy Chicken Pickle ">
                     <h2 class="text-red-700 font-semibold text-center mt-2">Chicken Chilli Pickle</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
@@ -270,7 +280,7 @@
                     <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
                         id="heartbtn" style="color: #000205;"></i>
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg relative veg  new search-tag">
+                <div id="card__text" class="bg-white p-2 rounded-xl shadow-lg relative veg  new search-tag">
                     <img src="./images/na6.jpeg" alt="Spicy Chicken Pickle ">
                     <h2 class="text-red-700 font-semibold text-center mt-2">Mangoes Ruchi Pickle</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
@@ -283,7 +293,7 @@
                     <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
                         id="heartbtn" style="color: #000205;"></i>
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg relative new veg   search-tag">
+                <div id="card__text" class="bg-white p-2 rounded-xl shadow-lg relative new veg   search-tag">
                     <img src="./images/na7.crdownload" alt="Spicy Chicken Pickle ">
                     <h2 class="text-red-700 font-semibold text-center mt-2">Avakaya Sweet Pickle</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
@@ -296,7 +306,7 @@
                     <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
                         id="heartbtn" style="color: #000205;"></i>
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg relative new veg   search-tag">
+                <div id="card__text" class="bg-white p-2 rounded-xl shadow-lg relative new veg   search-tag">
                     <img src="./images/na6.jpeg" alt="Spicy Chicken Pickle ">
                     <h2 class="text-red-700 font-semibold text-center mt-2">Crispy Garlics Pickle</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
@@ -309,7 +319,7 @@
                     <i class="hidden md:fa-regular fa-heart absolute top-6 right-6 text-2xl cursor-pointer transition-all duration-300"
                         id="heartbtn" style="color: #000205;"></i>
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg relative new veg  search-tag">
+                <div id="card__text" class="bg-white p-2 rounded-xl shadow-lg relative new veg  search-tag">
                     <img src="./images/na15.jpg" alt="Spicy Chicken Pickle ">
                     <h2 class="text-red-700 font-semibold text-center mt-2">15 in One Meal Combo</h2>
                     <p class="hidden md:block text-red-700 font-semibold text-center mt-2">RATING:🌟🌟🌟🌟🌟 </p>
@@ -350,7 +360,7 @@
 
     <!--FOOTER SECTIOn-->
 
-    <section class="flex flex-col md:flex-row justify-around items-start gap-8 px-6 py-6   footer">
+    <section class="flex flex-col md:flex-row justify-around items-start gap-8 px-6 py-3   footer">
 
         <!--Logo & Contact -->
         <div class="flex gap-4 items-start md:relative md:top-10">
