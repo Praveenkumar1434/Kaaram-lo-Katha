@@ -21,12 +21,13 @@ itemsearch.addEventListener("input", () => {
     items.forEach((item) => {
         const title = item.querySelector("h2").textContent.toLowerCase();
         if (title.includes(searchin)) {
-            item.classList.remove("hidden");
+            item.style.display = "block";
         } else {
-            item.classList.add("hidden");
+            item.style.display = "none";
         }
     });
 });
+
 
 //checkbox
 
