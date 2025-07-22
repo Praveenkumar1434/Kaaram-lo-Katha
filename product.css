@@ -146,3 +146,8 @@ html {
 .animate-slide-in-left {
     animation: slide-in-left 0.6s ease-out forwards;
 }
+
+.checkbox-tag{
+    height: 500px;
+    
+}
